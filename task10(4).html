@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Fixed navigation bar */
+    nav {
+      position:fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+      z-index: 100; /* Ensure the nav is above other content */
+    }
+
+    /* Navigation links */
+    nav a {
+      display:inline-block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    }
+
+    /* Additional styling for content */
+    section {
+      margin-top: 60px; /* Adjust margin to prevent content from being hidden behind the fixed navbar */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <!-- Your page content goes here -->
+    <h1>Welcome to My Website</h1>
+    <p>This is some content on the page.</p>
+  </section>
+</body>
+</html>
